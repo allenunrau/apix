@@ -1,0 +1,6 @@
+# API endpoint definitions - using local test server on port 9999
+# Each entry specifies: host, method, uri, and optional body
+
+- host: localhost:9999
+  method: GET
+  uri: /users

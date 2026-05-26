@@ -1,0 +1,22 @@
+# Master workflow file for apix
+# Defines the order of module execution
+# Data flows between modules as JSON in memory
+
+steps:
+  # Step 1: Load authentication configuration
+  - module: auth
+    config: auth.yaml
+
+  # Step 2: Call all API endpoints
+  - module: endpoints
+    config: endpoints.yaml
+
+  # Step 3: Process the API response data with jq
+  # Extracts id, name, email, username from the users endpoint
+  - module: process
+    config: process.jq
+
+  # Step 4: Render the processed data into a report using Jinja2
+  - module: template
+    config: template.jinja2
+    output: output_report.txt

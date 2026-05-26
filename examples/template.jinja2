@@ -1,0 +1,19 @@
+{% if items %}
+API Users Report
+================
+
+Total users: {{ items | length }}
+
+{% for user in items %}
+----------------------------------------
+User #{{ user.id }}
+  Name:     {{ user.name }}
+  Username: {{ user.username }}
+  Email:    {{ user.email }}
+{% endfor %}
+
+---
+End of Report
+{% else %}
+No data available.
+{% endif %}

@@ -1,0 +1,28 @@
+
+API Users Report
+================
+
+Total users: 3
+
+
+----------------------------------------
+User #1
+  Name:     Alice Johnson
+  Username: alice
+  Email:    alice@example.com
+
+----------------------------------------
+User #2
+  Name:     Bob Smith
+  Username: bob
+  Email:    bob@example.com
+
+----------------------------------------
+User #3
+  Name:     Charlie Brown
+  Username: charlie
+  Email:    charlie@example.com
+
+
+---
+End of Report

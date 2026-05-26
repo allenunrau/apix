@@ -1,0 +1,7 @@
+# Authentication configuration for API hosts
+# Supports: basic, bearer, api-key, oauth2-client-credentials
+
+- host: localhost
+  method: bearer
+  credentials:
+    token: ""  # local test server, no auth needed
